@@ -1,7 +1,7 @@
 module HomeHelper
   def twitter_share_url
     share_url = "http://#{ENV['PRODUCTION_DOMAIN']}"
-    tweet = "This amazing startup is like Uber for Everything > "
+    tweet = "Reddit Ad Alerts - Monitor Subreddit Advertising Inventory"
     tweet_params = {
       hashtags: '', 
       text: tweet, 
@@ -24,8 +24,8 @@ module HomeHelper
   end
   def linkedin_share_url
     share_url = "http://#{ENV['PRODUCTION_DOMAIN']}"
-    share_title = "Uber for Everything"
-    share_summary = "You have to check out this new startup, Uber for Everything!"
+    share_title = "Reddit Ad Alerts - Monitor Subreddit Advertising Inventory"
+    share_summary = "Monitor subreddit ad opportunities with weekly reports and unclaimed inventory alerts."
     post_params = {
       mini: 'true', 
       url: share_url, 
@@ -37,7 +37,7 @@ module HomeHelper
   end
   def reddit_share_url
     share_url = "http://#{ENV['PRODUCTION_DOMAIN']}"
-    share_title = "Uber for Everything is the coolest new Start-Up"
+    share_title = "Reddit Ad Alerts - Monitor Subreddit Advertising Inventory"
     tb_params = {
       url: share_url, 
       title: share_title 
